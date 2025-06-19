@@ -9,6 +9,13 @@ This project builds a custom Linux image for an IoT Gateway with SWUpdate OTA ca
 - QEMU x86-64 Machine
 - Auto-login to root
 
+  ## 🖼️ QEMU Boot Screen
+
+Below is a snapshot of the custom IoT image running in QEMU:
+
+![QEMU Boot Screenshot](images/qemu-boot.png)
+
+
 ## 🧱 Layers
 - Poky
 - meta-openembedded
@@ -23,8 +30,3 @@ source oe-init-build-env ../build
 bitbake custom-iot-image
 runqemu qemux86-64 custom-iot-image
 
-## 🖼️ QEMU Boot Screen
-
-Below is a snapshot of the custom IoT image running in QEMU:
-
-![QEMU Boot Screenshot](images/qemu-boot.png)
